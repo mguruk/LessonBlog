@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
  * @author manish
  *
  */
-public class Post {
+public class Post extends BaseEntity {
 
 	private String title;
 	private String description;

@@ -4,7 +4,7 @@ package com.microguru.lessonblog.model;
  * @author manish
  *
  */
-public class User {
+public class User extends BaseEntity {
 	
 	private String FirstName;
 	private String LastName;

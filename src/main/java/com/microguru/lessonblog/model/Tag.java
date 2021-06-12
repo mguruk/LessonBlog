@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
  * @author manish
  *
  */
-public class Tag {
+public class Tag extends BaseEntity{
 	
 	private String tagName;
 	private LocalDateTime tagCreationTime;

@@ -5,7 +5,7 @@ package com.microguru.lessonblog.model;
  * @author manish
  *
  */
-public class Category {
+public class Category extends BaseEntity{
 	
 	private String categoryName;
 	private int isEnable;

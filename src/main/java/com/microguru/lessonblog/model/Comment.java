@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
  * @author manish
  *
  */
-public class Comment {
+public class Comment extends BaseEntity {
 	
 	private String commentBody;
 	private LocalDateTime commentTime;
