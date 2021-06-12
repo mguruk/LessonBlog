@@ -1,6 +1,6 @@
 package com.microguru.lessonblog.services;
 
-import java.util.Set;
+
 import com.microguru.lessonblog.model.Category;
 
 
@@ -8,9 +8,8 @@ import com.microguru.lessonblog.model.Category;
  * @author manish
  *
  */
-public interface CategoryService {
+public interface CategoryService extends CrudService<Category, Long>{
 	
-	Category save(Category category);
-	Set<Category> getAllCategory();
+	
 
 }

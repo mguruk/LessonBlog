@@ -8,9 +8,8 @@ import com.microguru.lessonblog.model.Comment;
  * @author manish
  *
  */
-public interface CommentService {
-	
-	Comment save(Comment comment);
-	Set<Comment> getAllCommentByPost(long id);
+public interface CommentService extends CrudService<Comment,Long>  {
+
+	Set<Comment> getAllCommentByPost(long postId);
 	
 }
