@@ -2,6 +2,8 @@ package com.microguru.lessonblog.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import com.microguru.lessonblog.model.Tag;
 import com.microguru.lessonblog.services.CrudService;
 
@@ -9,6 +11,7 @@ import com.microguru.lessonblog.services.CrudService;
  * @author manish
  *
  */
+@Service
 public class TagServiceMap extends AbstractMapService<Tag, Long> implements CrudService<Tag, Long>{
 
 	@Override

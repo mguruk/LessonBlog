@@ -2,14 +2,16 @@ package com.microguru.lessonblog.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
 import com.microguru.lessonblog.model.Post;
-import com.microguru.lessonblog.services.CrudService;
+import com.microguru.lessonblog.services.PostService;
 
 /**
  * @author manish
  *
  */
-public class PostServiceMap extends AbstractMapService<Post, Long> implements CrudService<Post, Long> {
+@Service
+public class PostServiceMap extends AbstractMapService<Post, Long> implements PostService {
 
 	@Override
 	public  Set<Post> findAll() {
@@ -39,6 +41,12 @@ public class PostServiceMap extends AbstractMapService<Post, Long> implements Cr
 	public void delete(Post object) {
 		// TODO Auto-generated method stub
 		super.delete(object);
+	}
+
+	@Override
+	public Post findByAuthor(long authorId) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
